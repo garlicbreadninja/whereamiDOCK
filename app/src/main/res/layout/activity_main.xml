@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="40.73581"
+        mapbox:mapbox_cameraTargetLng="-73.99155"
+        mapbox:mapbox_cameraZoom="11"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/restartbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#616161"
+        android:text="@string/restartbutton"
+        mapbox:layout_constraintBottom_toBottomOf="@+id/mapView"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="0dp"
+        android:fontFamily="@font/ananoyreg"
+        android:text=""
+        mapbox:layout_constraintBottom_toBottomOf="@+id/longi"
+        mapbox:layout_constraintEnd_toStartOf="@+id/longi"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toTopOf="@+id/longi"
+        mapbox:layout_constraintLeft_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/longi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/preloadGPStxtv"
+        android:fontFamily="@font/ananoyreg"
+        mapbox:layout_constraintBottom_toTopOf="@+id/restartbutton"
+        mapbox:layout_constraintEnd_toEndOf="@+id/mapView"
+        mapbox:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:text=""
+        android:fontFamily="@font/ananoyreg"
+        mapbox:layout_constraintBottom_toBottomOf="@+id/longi"
+        mapbox:layout_constraintEnd_toEndOf="@+id/mapView"
+        mapbox:layout_constraintStart_toEndOf="@+id/longi"
+        mapbox:layout_constraintTop_toTopOf="@+id/longi" />
+
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:drawableEnd="@drawable/ic_roundx"
+        android:padding="12dp"
+        android:rotation="45"
+        android:background="#00000000"
+        android:textColor="#7F000000"
+        android:shadowColor="#00000000"
+        android:shadowRadius="0"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

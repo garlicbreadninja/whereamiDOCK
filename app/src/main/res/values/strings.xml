@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">whereamiDOCK</string>
+    <string name="track_notif">Currently Tracking. Tap to Cancel.</string>
+    <string name="test_email">test@test.com</string>
+    <string name="test_password">testpassword</string>
+    <string name="firebase_path">location</string>
+    <string name="restartbutton">Restart Broadcast</string>
+    <string name="lnglattext">Current Coordinates: </string>
+    <string name="preloadGPStxtv">Waiting For GPS...</string>
+    <string name="restart_toast">Restarting Firebase</string>
+
+</resources>
